@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* CSS Document */
+p, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 16pt;
+}
+.bodycopy {
+color: #333333;
+}
+body {
+	background-color: #efca71;
+	background-image: url(new_site/images/index_bk.png);
+	background-repeat: repeat-x;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a:link {
+	color: #336699;
+	border: 0px;
+}
+.bullet2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #663300;
+	text-align: right;
+}
+.subheader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #663300;
+	text-align: left;
+}
+small {
+}
+.footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000066;
+	text-align: center;
+}
+
+.style1 {
+	color: #990000;
+	font-weight: bold;
+}
+.style2 {
+	font-family: comic, "Comic Sans MS";
+	color: #003366;
+	font-weight: bold;
+	text-indent: 3px;
+}
+.style3 {
+	font-size: 16pt;
+	font-weight: bold;
+}
+.style4 {
+	font-size: 14pt;
+	font-weight: bold;
+}
+.style5 {font-size: 16pt}
+tr td p {
+}
+td p img {
+	clear: both;
+}
+.centered {
+	text-align: center;
+}
+#container {
+	width: 100%;
+}
+#left {
+	width: 70%;
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	text-align: left;
+}
+#leftimage {
+}
+.stylebig {
+	font-family: alex-brush;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+}
+article {
+	background-color: #FAF87B;
+	padding-left: 2px;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	text-align: center;
+}
