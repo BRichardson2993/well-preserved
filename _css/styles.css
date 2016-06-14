@@ -11,11 +11,7 @@ links: #336699
 
 font: Murray Hill
 *************************************************************/
-
-
 /* Guide to code: All pages are broken into 3 sections: col1, col2, and col3. Link styles for each section appear below CSS code in each of the sections. */
-
-
 /*Simple Reset*/
 
 html,
@@ -42,8 +38,6 @@ figcaption {
   border: 0;
   text-decoration: none;
 }
-
-
 /********************************************************
 Global Styles
 ********************************************************/
@@ -64,8 +58,6 @@ body {
 li {
   list-style: inside;
 }
-
-
 /********************************************************
 Banner Styles
 ********************************************************/
@@ -134,8 +126,6 @@ nav a {
   font-weight: bold;
   text-decoration: none;
 }
-
-
 /********************************************************
 General Page Styles
 ********************************************************/
@@ -180,8 +170,6 @@ ul li:not(nav li),
 ol li:not(nav li) {
   list-style-position: inside;
 }
-
-
 /*****************************************
 Column 1 styles
 *****************************************/
@@ -263,8 +251,6 @@ section div:last-child {
   border: none;
   overflow: hidden;
 }
-
-
 /* Column 1 link styles */
 
 .emailCol1 {
@@ -305,7 +291,6 @@ audio {
 }
 
 .winnings {
-
   color: white;
   background: rgb(145, 32, 29);
   font-size: 1.15em;
@@ -328,8 +313,6 @@ audio {
 .okcpd a:hover {
   color: #ffdf5e;
 }
-
-
 /*****************************************
 Column 2 styles
 *****************************************/
@@ -529,6 +512,10 @@ dd {
   border-top: 1px dotted #333;
 }
 
+#addtlResources div {
+  border-bottom: none;
+}
+
 #addtlResources h3:last-child {
   display: block;
   clear: both;
@@ -546,7 +533,8 @@ dd {
   padding-left: 2em;
 }
 
-#roofing img {
+#roofing img,
+#broyles img {
   width: 30%;
 }
 
@@ -592,14 +580,17 @@ address {
   margin: 0 auto;
 }
 
-
+.car {
+  max-width: 90%;
+  margin: 0 auto;
+}
 /*****************************************
 Column 3 styles
 *****************************************/
 
 #col3 {
   padding: 0 0 0 1%;
-  max-width: 15%;
+  max-width: 16%;
   float: left;
   font-size: .9em;
   text-align: center;
@@ -626,11 +617,13 @@ aside {
 
 .weeklySponsor {
   margin-bottom: 2em;
-  text-align: center;
+  text-align: left;
   border-bottom: 1px solid black;
-  background: #6F250F;
-  color: white;
   letter-spacing: .5px;
+  color: white;
+  font-size: .9em;
+  line-height: 1.75em;
+  background: #6F250F;
 }
 
 .weeklySponsor a {
@@ -639,7 +632,7 @@ aside {
 }
 
 .weeklySponsor p {
-  padding-bottom: .5em
+   padding: 1em;
 }
 
 .weeklySponsor img {
@@ -648,12 +641,19 @@ aside {
   border: 5px solid white;
 }
 
-.sponsorHeadline {
+.sponsorHeadline { /* should be H2 */
   font-size: 1.5em;
+  text-align: center;
+  color: #6f250f;
+  line-height: 1.25em;
+  color: white;
+}
+
+.moreInfo {
+  text-align: center;
 }
 
 #patrickEunice figure {
-  width: 90%;
 }
 
 figure {
@@ -738,8 +738,6 @@ Footer styles
   font-weight: bold;
   font-size: 1.25em;
 }
-
-
 /*****************************************
 Link styles
 *****************************************/
@@ -758,13 +756,9 @@ a:visited {
   padding: 4% 4%;
   list-style: none;
 }
-
-
 /*****************************************
 Media Queries
 *****************************************/
-
-
 /*mobile styles*/
 
 @media only screen and (max-width:1300px) {
@@ -893,7 +887,6 @@ Media Queries
     #mc_embed_signup {
       width: 100%;
     }
-
     #mc_signup_scroll {
       width: 100%;
     }
@@ -902,7 +895,6 @@ Media Queries
       padding: 0;
       margin: 0;
     }
-
     .quiz {
       padding: 1em;
       float: none;
