@@ -132,9 +132,10 @@ General Page Styles
 
 h2 {
   font-family: dancing-script, serif;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: normal;
   color: #91201D;
+
 }
 
 blockquote,
@@ -221,16 +222,20 @@ section div:last-child {
   padding-top: 2em;
 }
 
+.glennBeck p {
+  line-height: 1.5em;
+}
+
 .lifeSelect,
 .comfortKeepers {
   margin: 1em 0;
   text-align: center;
 }
 
-.healthPage,
 .healthTip {
   margin: 2em;
-  text-align: center;
+  text-align: left;
+  line-height: 1.5em;
   border-radius: 10px;
   background: rgba(239, 202, 113, .4);
 }
@@ -407,6 +412,10 @@ dd {
   padding-bottom: 1em;
 }
 
+#col2 ol li {
+  list-style: inside decimal;
+}
+
 #eunice img {
   float: left;
   padding-right: 1em;
@@ -480,6 +489,10 @@ dd {
 .guestsBlock h3 {
   display: block;
   clear: both;
+}
+
+.guestsBlock p {
+  line-height: 1.3em;
 }
 
 #resources {
@@ -584,6 +597,25 @@ address {
   max-width: 90%;
   margin: 0 auto;
 }
+
+.stroke {
+  max-width: 300px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.iHeart p {
+  max-width: 60%;
+  display: inline;
+  float: left;
+  padding: 0;
+}
+
+.iHeart .heart {
+  display: inline;
+}
+
 /*****************************************
 Column 3 styles
 *****************************************/
