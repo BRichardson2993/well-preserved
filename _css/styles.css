@@ -351,6 +351,12 @@ article:last-of-type {
   border-bottom: none;
 }
 
+.article img {
+  display: inline;
+  float: left;
+  margin-right: 2%;
+}
+
 figure {
   display: inline-block;
 }
@@ -671,6 +677,7 @@ aside {
   max-width: 90%;
   margin: 0 auto;
   border: 5px solid white;
+  background: white;
 }
 
 .sponsorHeadline { /* should be H2 */
