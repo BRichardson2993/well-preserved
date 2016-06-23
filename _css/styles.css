@@ -325,7 +325,7 @@ Column 2 styles
 #col2 {
   max-width: 55%;
   float: left;
-  padding: 2%;
+  padding: 2
   margin: 0 auto;
 }
 
@@ -339,6 +339,11 @@ Column 2 styles
 
 .imageMED {
   max-width: 100%;
+}
+
+.imageSmall {
+  max-width: 70%;
+
 }
 
 article {
