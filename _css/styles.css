@@ -1,4 +1,4 @@
-  /************************************************************
+    /************************************************************
 Palette:
 
 gray            #e9e9e9 rgb(233,233,233)
@@ -135,7 +135,7 @@ h2 {
   font-size: 3em;
   font-weight: normal;
   color: #91201D;
-
+  padding: 2%;
 }
 
 blockquote,
@@ -325,7 +325,6 @@ Column 2 styles
 #col2 {
   max-width: 55%;
   float: left;
-  padding: 2
   margin: 0 auto;
 }
 
@@ -333,21 +332,73 @@ Column 2 styles
 #col2 h3,
 #col2 h4,
 #col2 h5 {
-  padding: .5em 0;
   text-align: left;
+}
+
+#col2 h3,
+#col2 h4,
+#col2 h5 {
+  margin: 1em 0;
+}
+
+.guestsBlock {
+  display: block;
+  clear: both;
+  border-bottom: none;
+}
+
+.guest {
+  height: 100%;
+  border-bottom: none;
+  clear: both;
+  overflow: auto;
+}
+
+.guest p {
+  display: block;
+  padding: 2em 0 0 1em;
+  margin-bottom: 2em;
+}
+
+.guest img {
+  display: inline;
+  margin: 0 4% 8% 0;
+  max-width: 30%;
+  float: left;
+  border-radius: 15px;
+}
+
+.guestsBlock h3 {
+  display: block;
+  clear: both;
+}
+
+.guestsBlock p {
+  line-height: 1.3em;
+}
+
+.guest .imageLG {
+  display: block;
+  clear: both;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  float: none;
 }
 
 .imageMED {
   max-width: 100%;
+  padding: 1em;
 }
 
-.imageSmall {
+.imageSM {
   max-width: 70%;
-
 }
 
 article {
-  padding: 0 10% 1em 5%;
+  display: block;
+  clear: both;
+  padding: 0 5% 1em 5%;
   border-bottom: 1px solid #666;
   margin-top: 1em;
 }
@@ -367,15 +418,23 @@ figure {
 }
 
 .quiz {
-  display: block;
-  padding: 1em 2em 4em 0;
+  display: inline-block;
   float: left;
 }
 
 .quizList {
   display: block;
   border-bottom: none;
-  width: 100%;
+  clear: both;
+}
+
+.quizList h2 {
+  margin-bottom: .5em;
+}
+
+.quizList ul {
+  max-width: 40%;
+  padding-left: 50%;
 }
 
 iframe {
@@ -468,42 +527,6 @@ dd {
 
 #col2 .button {
   margin-top: 1em;
-}
-
-.guestsBlock {
-  display: block;
-  clear: both;
-  border-bottom: none;
-}
-
-.guest {
-  height: 100%;
-  border-bottom: none;
-  clear: both;
-  overflow: auto;
-}
-
-.guest p {
-  display: block;
-  padding: 2em 0 0 1em;
-  margin-bottom: 2em;
-}
-
-.guest img {
-  display: inline;
-  margin: 0 4% 8% 0;
-  max-width: 200px;
-  float: left;
-  border-radius: 15px;
-}
-
-.guestsBlock h3 {
-  display: block;
-  clear: both;
-}
-
-.guestsBlock p {
-  line-height: 1.3em;
 }
 
 #resources {
@@ -610,10 +633,9 @@ address {
 }
 
 .stroke {
+  display: block;
   max-width: 300px;
-  margin: 0;
-  padding: 0;
-  margin: 0 auto;
+  clear: both;
 }
 
 .iHeart p {
@@ -626,13 +648,12 @@ address {
 .iHeart .heart {
   display: inline;
 }
-
 /*****************************************
 Column 3 styles
 *****************************************/
 
 #col3 {
-  padding: 0 0 0 1%;
+  padding: 0 0 0 2%;
   max-width: 16%;
   float: left;
   font-size: .9em;
@@ -675,7 +696,7 @@ aside {
 }
 
 .weeklySponsor p {
-   padding: 1em;
+  padding: 1em;
 }
 
 .weeklySponsor img {
@@ -685,7 +706,13 @@ aside {
   background: white;
 }
 
-.sponsorHeadline { /* should be H2 */
+.contact {
+  /*last paragraph of sponsor of the week */
+  text-align: center;
+}
+
+.sponsorHeadline {
+  /* should be H2 */
   font-size: 1.5em;
   text-align: center;
   color: #6f250f;
@@ -697,8 +724,7 @@ aside {
   text-align: center;
 }
 
-#patrickEunice figure {
-}
+#patrickEunice figure {}
 
 figure {
   margin: 0 -25%;
@@ -762,8 +788,6 @@ aside p {
   padding: 0;
   margin: 0;
 }
-
-
 /*****************************************
 Footer styles
 *****************************************/
@@ -801,159 +825,168 @@ a:visited {
   list-style: none;
 }
 /*****************************************
+MailChimp styles
+*****************************************/
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  /*****************************************
 Media Queries
 *****************************************/
-/*mobile styles*/
-
-@media only screen and (max-width:1300px) {
-  section div {
-    margin: 0 auto;
-    text-align: left;
-  }
-  .quiz {
-    padding: 0;
-    margin: 0;
-  }
-  #col1,
-  #col2,
-  #col3 {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .quizList {
-    display: block;
-    clear: both;
-  }
-  @media only screen and (max-width:768px) {
-    html {
-      background: white;
-    }
-    body {
-      width: 100%;
-      margin: 0 auto;
-      padding: 0 5%;
-    }
-    main {
-      margin: 0 auto;
-    }
-    header {
-      border: none;
-      height: auto;
-    }
-    .logo {
-      display: inline;
-      width: 40%;
-      clear: none;
-      padding-bottom: 4%;
-    }
-    h1 {
-      margin: 0;
-      padding: 0 4% 4% 0;
-      float: right;
-      font-size: 1.5em;
-    }
-    .bannerAddress {
-      float: right;
-      display: block;
-      max-width: 100%;
-    }
-    nav {
-      display: block;
-      padding: 0;
-      background: none;
-      border: none;
-      margin: 0 auto;
-      clear: both;
-    }
-    nav ul {
-      width: 100%;
-      background: none;
-      text-align: center;
-    }
-    nav li {
-      width: 40%;
-      height: 40px;
-      background: #91201D;
-      border: 1px solid white;
-      margin-left: 0;
-      margin-bottom: 3px;
-    }
-    nav li:nth-child(2n) {
-      margin-left: 5px;
-    }
-    nav a {
-      margin: 0;
-      padding: 0;
-      color: white;
-      background: #91201D;
-    }
-    nav a:hover,
-    nav a:visited {
-      color: white;
-    }
-    .glennBeck,
-    #euniceKnows,
-    .euniceQual,
-    #saturdays,
-    .facebook,
-    .iheart {
-      display: none;
-    }
-    #col1,
-    #col3 {
-      display: block;
-      float: none;
-      max-width: 100%;
-      margin: 0 auto;
-      border: none;
-      clear: both;
-    }
-    #col2 {
-      display: block;
-      float: none;
-      max-width: 100%;
-      margin: 0 auto;
-    }
-    #col1 img,
-    #col2 img,
-    #col3 img {
-      display: block;
-      clear: both;
-      padding: 0;
-      margin: 0 auto;
-      text-align: center;
-    }
+  /*mobile styles*/
+  @media only screen and (max-width: 1300px) {
     section div {
-      padding: 0;
-      margin: 0;
-      text-align: inherit;
-    }
-    #mc_embed_signup {
-      width: 100%;
-    }
-    #mc_signup_scroll {
-      width: 100%;
-    }
-    #mc_field_group {
-      width: 90%;
-      padding: 0;
-      margin: 0;
+      margin: 0 auto;
+      text-align: left;
     }
     .quiz {
-      padding: 1em;
-      float: none;
+      padding: 0;
+      margin: 0;
     }
-    .quizList ol {
-      padding-bottom: 1em;
+    #col1,
+    #col2,
+    #col3 {
+      width: 100%;
+      margin: 0 auto;
     }
     .quizList {
-      width: 60%;
-      margin: 0 auto;
+      display: block;
+      clear: both;
     }
-    #player {
-      margin: 0 auto;
+    @media only screen and (max-width:768px) {
+      html {
+        background: white;
+      }
+      body {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5%;
+      }
+      main {
+        margin: 0 auto;
+      }
+      header {
+        border: none;
+        height: auto;
+      }
+      .logo {
+        display: inline;
+        width: 40%;
+        clear: none;
+        padding-bottom: 4%;
+      }
+      h1 {
+        margin: 0;
+        padding: 0 4% 4% 0;
+        float: right;
+        font-size: 1.5em;
+      }
+      .bannerAddress {
+        float: right;
+        display: block;
+        max-width: 100%;
+      }
+      nav {
+        display: block;
+        padding: 0;
+        background: none;
+        border: none;
+        margin: 0 auto;
+        clear: both;
+      }
+      nav ul {
+        width: 100%;
+        background: none;
+        text-align: center;
+      }
+      nav li {
+        width: 40%;
+        height: 40px;
+        background: #91201D;
+        border: 1px solid white;
+        margin-left: 0;
+        margin-bottom: 3px;
+      }
+      nav li:nth-child(2n) {
+        margin-left: 5px;
+      }
+      nav a {
+        margin: 0;
+        padding: 0;
+        color: white;
+        background: #91201D;
+      }
+      nav a:hover,
+      nav a:visited {
+        color: white;
+      }
+      .glennBeck,
+      #euniceKnows,
+      .euniceQual,
+      #saturdays,
+      .facebook,
+      .iheart {
+        display: none;
+      }
+      #col1,
+      #col3 {
+        display: block;
+        float: none;
+        max-width: 100%;
+        margin: 0 auto;
+        border: none;
+        clear: both;
+      }
+      #col2 {
+        display: block;
+        float: none;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      #col1 img,
+      #col2 img,
+      #col3 img {
+        display: block;
+        clear: both;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+      }
+      section div {
+        padding: 0;
+        margin: 0;
+        text-align: inherit;
+      }
+      #mc_embed_signup {
+        width: 100%;
+      }
+      #mc_signup_scroll {
+        width: 100%;
+      }
+      #mc_field_group {
+        width: 90%;
+        padding: 0;
+        margin: 0;
+      }
+      .quiz {
+        padding: 1em;
+        float: none;
+      }
+      .quizList ul {
+        max-width: 100%;
+        padding: 0;
+        padding-bottom: 1em;
+      }
+      .quizList {
+        width: 100%;
+        margin: 0 auto;
+      }
+      #player {
+        margin: 0 auto;
+      }
+      #pageFooter {
+        font-size: .5em;
+      }
     }
-    #pageFooter {
-      font-size: .5em;
-    }
-  }
