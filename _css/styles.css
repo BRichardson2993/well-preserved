@@ -362,7 +362,7 @@ Column 2 styles
 
 .guest img {
   display: inline;
-  margin: 0 4% 8% 0;
+  margin: 0 4% 0 0;
   max-width: 30%;
   float: left;
   border-radius: 15px;
@@ -393,6 +393,12 @@ Column 2 styles
 
 .imageSM {
   max-width: 70%;
+}
+
+.imageRight {
+  float: right !important;
+  width: 75%;
+  padding: 5%;
 }
 
 article {
